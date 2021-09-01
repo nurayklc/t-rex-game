@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           count--;
           position = position * gravity;
           dino.style.bottom = position + "px";
-        }, 10);
+        }, 20);
       }
 
       //move up
