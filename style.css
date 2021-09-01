@@ -1,9 +1,54 @@
+.dino {
+  width: 60px;
+  height: 60px;
+  background-image: url(trex.png);
+  position: absolute;
+  bottom: 0px;
+}
+
+.obstacle{
+  width: 60px;
+  height: 60px;
+  background-image: url(cactus.png);
+  position: absolute;
+  bottom: 0px;
+}
+
+@keyframes slideright{
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+#desert {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('t-rex-background.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
+/*
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: #000;
+  background: rgb(153, 130, 130);
 }
 
 #game {
@@ -62,4 +107,4 @@ body {
 
 .cactus-animate {
   animation: cactus 2s linear infinite;
-}
+}*/
