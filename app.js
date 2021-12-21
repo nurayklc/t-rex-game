@@ -36,12 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       //move up
-      console.log("up");
       position += 30;
       count++;
       position = position * gravity;
       dino.style.bottom = position + "px";
-      console.log(dino.style.bottom);
     }, 20);
   }
 
